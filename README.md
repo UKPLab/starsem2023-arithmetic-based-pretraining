@@ -3,7 +3,7 @@
 This repository provides the code for our paper [_Improving the Numerical Reasoning Skills of Pretrained Language Models_](https://arxiv.org/pdf/2205.06733.pdf). It is an experimental software and is published for the sole purpose of giving additional background details on the publication. 
 
 ## Citation
----
+
 
 Please reference our work as follows:
 ```
@@ -16,7 +16,7 @@ Please reference our work as follows:
 ```
 
 ## Project Description
----
+
 
 State-of-the-art pretrained language models tend to perform below their capabilities when applied out-of-the-box on tasks that require
 reasoning over numbers. Recent work sees two main reasons for this: (1) popular tokenisation algorithms are optimized for common words, and therefore have limited expressiveness for numbers, and (2) common pretraining objectives do not target numerical reasoning or understanding numbers at all. Recent approaches usually address them separately and mostly by proposing architectural changes or pretraining models from scratch. 
@@ -31,7 +31,7 @@ We evaluate our approach on three different tasks that require numerical reasoni
 Recent work has shown that character-level tokenization is more expressive for representing numbers because it does not rely on frequently observed patterns, as do subword-based tokenization algorithms, but considers each character individually.
 
 ## How To
----
+
 This section briefly describes how to setup an environment for working with our code. Please don't hesitate to contact us if you find any errors or something does not work as expected. 
 
 ### Setup
