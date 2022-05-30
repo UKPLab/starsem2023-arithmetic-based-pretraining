@@ -10,7 +10,7 @@ Normally, evaluation is done following the training. But if you want to do evalu
 
 The scripts outputs the evaluation results directly to the console.
 
-If you want to use PARENT, you can do this by using the _calc_parent.py_ script. The script does not need any command-line arguments. Please set the constants directly in the script.
+If you want to use PARENT, you can do this by using the _calc_parent.py_ script. The script does not need any command-line arguments. Please set the constants directly in the script (we have generated the parent files for WikiBio and SciGen, and you can find them in the _parent_files_ folder).
 
 If you want to calculate the BLEURT score (in the table-to-text scenario), please use this command:
 
