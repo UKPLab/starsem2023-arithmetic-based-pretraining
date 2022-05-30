@@ -47,8 +47,9 @@ If you want to use BLEURT for evaluation, please stick to [their](https://github
 
 ### Dataset Creation
 ---
+For make the original datasets usable with our code, please follow the instructions given in the README of the _scripts_ folder.
 
-Please follow the instructions given in the README of the _scripts_ folder.
+We provide the dataset splits that were used for our experiments with the inferable number prediction task in the _datasets_ folder. However, if you want to recreate them from the original datasets, you can also use the scripts provided in the _scripts_ folder.
 
 ### Run Experiments
 ---
