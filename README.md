@@ -3,7 +3,7 @@
 This repository provides the code for our paper [_Improving the Numerical Reasoning Skills of Pretrained Language Models_](https://arxiv.org/pdf/2205.06733.pdf). It is an experimental software and is published for the sole purpose of giving additional background details on the publication. 
 
 ## Citation
----
+
 
 Please reference our work as follows:
 ```
@@ -16,7 +16,7 @@ Please reference our work as follows:
 ```
 
 ## Project Description
----
+
 
 State-of-the-art pretrained language models tend to perform below their capabilities when applied out-of-the-box on tasks that require
 reasoning over numbers. Recent work sees two main reasons for this: (1) popular tokenisation algorithms are optimized for common words, and therefore have limited expressiveness for numbers, and (2) common pretraining objectives do not target numerical reasoning or understanding numbers at all. Recent approaches usually address them separately and mostly by proposing architectural changes or pretraining models from scratch. 
@@ -31,11 +31,10 @@ We evaluate our approach on three different tasks that require numerical reasoni
 Recent work has shown that character-level tokenization is more expressive for representing numbers because it does not rely on frequently observed patterns, as do subword-based tokenization algorithms, but considers each character individually.
 
 ## How To
----
+
 This section briefly describes how to setup an environment for working with our code. Please don't hesitate to contact us if you find any errors or something does not work as expected. 
 
 ### Setup
----
 
 The code was developed for Python 3.8.3. We recommend to create a new virtual environment first. Then:
 
@@ -46,12 +45,13 @@ The code was developed for Python 3.8.3. We recommend to create a new virtual en
 If you want to use BLEURT for evaluation, please stick to [their](https://github.com/google-research/bleurt) installation instructions. The same applies to PARENT ([installation instructions](https://github.com/KaijuML/parent)).
 
 ### Dataset Creation
----
 
-Please follow the instructions given in the README of the _scripts_ folder.
+For make the original datasets usable with our code, please follow the instructions given in the README of the _scripts_ folder.
+
+We provide the dataset splits that were used for our experiments with the inferable number prediction task in the _datasets_ folder. However, if you want to recreate them from the original datasets, you can also use the scripts provided in the _scripts_ folder.
 
 ### Run Experiments
----
+
 Our code can be started via command line. The minimal command is:
 ```bash
 python trainer.py --do_train --do_predict --model_name_or_path=facebook/bart-large --output_dir=/path/to/output/dir --data_dir=/path/to/data/dir --masked_number_prediction_contrastive --em_score
@@ -67,16 +67,13 @@ In our experiments, we used EM score as validation metric for reasoning-aware pr
 If you want to use a GPU, you have to directly target it using _CUDA_VISIBLE_DEVICES_.
 
 ### Evaluation
----
 
 Please follow the instructions given in the README of the _evaluation_ folder.
 
 ### Contact Persons
----
 
 - Dominic Petrak (<petrak@ukp.informatik.tu-darmstadt.de>)
   
 ### Links
----
 
 [UKP Lab Homepage](https://www.ukp.tu-darmstadt.de/) | [TU Darmstadt Website](https://www.tu-darmstadt.de/index.en.jsp)
