@@ -1,6 +1,6 @@
 # Datasets
 
-This folder provides the data preprocessed for the inferable number prediction task. They are not under the license of this project. For reuse, please consider the original licenses:
+This folder provides the data preprocessed for the inferable number prediction task. They are <ins>not under the license of this project</ins> (Apache 2.0). For reuse, please consider the original licenses:
 
 - WikiBio - [Git-Repo](https://github.com/rlebret/wikipedia-biography-dataset)
 - SciGen - [Git-Repo](https://github.com/UKPLab/SciGen/)
