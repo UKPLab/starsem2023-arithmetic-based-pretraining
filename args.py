@@ -6,14 +6,14 @@ def add_args(parser):
     #
 
     parser.add_argument("--checkpoint_model", default=None, type=str,
-        help="The input data dir. Should contain the dataset files for the CNN/DM summarization task.")
+        help="A model pretrained using the INP task that should now be finetuned.")
     parser.add_argument("--model_name_or_path", default=None, type=str,
-            required=True, help="Path to pretrained model or model identifier from huggingface.co/models")
+            required=True, help="The model identifier from huggingface.co/models")
     parser.add_argument(
         "--config_name", default="", type=str, 
         help="Pretrained config name or path if not the same as model_name")
     parser.add_argument("--cache_dir", default="", type=str,
-        help="Where do you want to store the pre-trained models downloaded from s3")        
+        help="Where do you want to store the pre-trained models downloaded from s3?")        
     parser.add_argument("--tokenizer_name", default="", type=str,
         help="Pretrained tokenizer name or path if not the same as model_name")            
     parser.add_argument("--max_source_length", default=384, type=int,
@@ -73,10 +73,10 @@ def add_args(parser):
     #
 
     parser.add_argument("--masked_number_prediction", action="store_true", 
-        help="Whether to run the masked_number_prediction task.")
+        help="Whether to run the inferable number prediction task.")
     parser.add_argument("--masked_number_prediction_contrastive",   
         action="store_true", 
-        help="Whether to run the masked_number_prediction task.")
+        help="Whether to run the inferable number prediction task with contrastive loss.")
     parser.add_argument("--finetuning", action="store_true", 
         help="Whether to just run the finetuning task.")
 
@@ -89,24 +89,25 @@ def add_args(parser):
     # 
 
     parser.add_argument("--em_score", action="store_true", 
-        help="Whether to use the em score as validation metric.")
+        help="Whether to use the em score as validation metric. This is usually necessary for the inferable number prediction task and for finetuning using DROP and InfoTabs.")
     parser.add_argument("--mover_score", action="store_true", 
-        help="Whether to use the Moverscore as validation metric.")
+        help="Whether to use the Moverscore as validation metric. This is usually necessary for finetuning using the table-to-text generation datasets")
 
 
     #
     # Number Representations
     #
 
-    parser.add_argument("--scientific_notation", default=False, type=bool)
-    parser.add_argument("--char_level_representation", default=False, 
+    parser.add_argument("--scientific_notation", default=False, type=bool, 
+        help="Whether to use the scientific notation for numbers.")
+    parser.add_argument("--char_level_representation", default=False, help="Whether to use the char-level representation for numbers.", 
         type=bool)
-    
+        
     #
     # Contrastive Number Representation
     #
 
-    parser.add_argument("--verbalized", default=False, type=bool)   
-    parser.add_argument("--all", default=False, type=bool)
+    parser.add_argument("--verbalized", default=False, type=bool, help="Use the verbalized representation for numbers with the contrastive loss.")
+    parser.add_argument("--all", default=False, type=bool, help="Use the char-level representation, the scientific representation and the verbalized representation for numbers with the contrastive loss.")
 
     return parser
