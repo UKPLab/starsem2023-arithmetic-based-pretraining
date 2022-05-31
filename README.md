@@ -54,12 +54,12 @@ We provide the dataset splits that were used for our experiments with the infera
 
 Our code can be started via command line. The minimal command is:
 ```bash
-python trainer.py --do_train --do_predict --model_name_or_path=facebook/bart-large --output_dir=/path/to/output/dir --data_dir=/path/to/data/dir --masked_number_prediction_contrastive --em_score
+python trainer.py --do_train --do_predict --model_name_or_path=facebook/bart-large --output_dir=/path/to/output/dir --data_dir=/path/to/data/dir --masked_number_prediction_contrastive --em_score --char_level_representation
 ```
 This would train a bart-large model on the inferable number prediction task using contrastive learning and em score as validation metric. The following command starts finetuning of such a pretrained model:
 
 ```bash
-python trainer.py --do_train --do_predict --model_name_or_path=facebook/bart-large --output_dir=/path/to/output/dir --data_dir=/path/to/data/dir --finetuning --mover_score --checkpoint_model=/path/to/pretrained/model
+python trainer.py --do_train --do_predict --model_name_or_path=facebook/bart-large --output_dir=/path/to/output/dir --data_dir=/path/to/data/dir --finetuning --mover_score --checkpoint_model=/path/to/pretrained/model --char_level_representation
 ```
 
 In our experiments, we used EM score as validation metric for reasoning-aware pretraining, and for finetuning in case of DROP and InfoTabs. For WikiBio and SciGen, we use MoverScore for finetuning. A detailed description of each argument along with default values can be found in _args.py_.
