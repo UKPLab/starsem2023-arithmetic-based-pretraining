@@ -1,6 +1,6 @@
-# Improving the Numerical Reasoning Skills of Pretrained Language Models
+# Arithmetic-Based Pretraining -- Improving Numeracy of Pretrained Language Models
 
-This repository provides the code for our paper [_Improving the Numerical Reasoning Skills of Pretrained Language Models_](https://arxiv.org/pdf/2205.06733.pdf). It is an experimental software and is published for the sole purpose of giving additional background details on the publication. 
+This repository provides the code for our paper [Arithmetic-Based Pretraining -- Improving Numeracy of Pretrained Language Models](https://arxiv.org/pdf/2205.06733.pdf). It is an experimental software and is published for the sole purpose of giving additional background details on the publication. 
 
 ## Citation
 
