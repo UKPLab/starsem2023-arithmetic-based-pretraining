@@ -1,6 +1,6 @@
 # Arithmetic-Based Pretraining -- Improving Numeracy of Pretrained Language Models
 
-This repository provides the code for our paper [Arithmetic-Based Pretraining -- Improving Numeracy of Pretrained Language Models](https://arxiv.org/pdf/2205.06733.pdf). It is an experimental software and is published for the sole purpose of giving additional background details on the publication. 
+This repository provides the code for our paper [Arithmetic-Based Pretraining -- Improving Numeracy of Pretrained Language Models](https://arxiv.org/pdf/2205.06733.pdf). It is an experimental software and is published for the sole purpose of giving additional background details on the publication. This is a cleaned-up and condensed version of what was used to conduct the experiments in the paper (please get in touch if you find errors).
 
 ## Citation
 
