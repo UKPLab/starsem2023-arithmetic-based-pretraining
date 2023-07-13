@@ -6,7 +6,7 @@ def MNRLoss(embeddings_a:torch.Tensor, embeddings_b:torch.Tensor, scale:float = 
     Calculate Multiple Negative Ranking Loss according to the implementation used in SBERT
     (https://github.com/UKPLab/sentence-transformers/blob/master/sentence_transformers/losses/MultipleNegativesRankingLoss.py)
 
-    I use the implementation of the MNRLoss in S-BERT as reference (https://github.com/UKPLab/sentence-transformers/blob/master/sentence_transformers/losses/MultipleNegativesRankingLoss.py) which uses sentence embeddings. The sentence embeddings are obtained using a mean pooling operation which takes the attention mask into account (https://www.sbert.net/examples/applications/computing-embeddings/README.html?highlight=sentence_embedding#sentence-embeddings-with-transformers). Since in our case all embeddings of a number's tokens matter, I think we're fine with just averaging the hidden states together. 
+    We use the implementation of the MNRLoss in S-BERT as reference (https://github.com/UKPLab/sentence-transformers/blob/master/sentence_transformers/losses/MultipleNegativesRankingLoss.py) which uses sentence embeddings. The sentence embeddings are obtained using a mean pooling operation which takes the attention mask into account (https://www.sbert.net/examples/applications/computing-embeddings/README.html?highlight=sentence_embedding#sentence-embeddings-with-transformers). Since in our case all embeddings of a number's tokens matter, I think we're fine with just averaging the hidden states together. 
     '''
 
     loss = CrossEntropyLoss()
