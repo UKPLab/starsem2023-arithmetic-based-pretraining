@@ -7,11 +7,13 @@ This repository provides the code for our paper [_Improving the Numerical Reason
 
 Please reference our work as follows:
 ```
-@article{petrak2022improving,
-  title={Improving the Numerical Reasoning Skills of Pretrained Language Models},
-  author={Petrak, Dominic and Moosavi, Nafise Sadat and Gurevych, Iryna},
-  journal={arXiv preprint arXiv:2205.06733},
-  year={2022}
+@misc{petrak2023arithmeticbased,
+      title={Arithmetic-Based Pretraining -- Improving Numeracy of Pretrained Language Models}, 
+      author={Dominic Petrak and Nafise Sadat Moosavi and Iryna Gurevych},
+      year={2023},
+      eprint={2205.06733},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
 
