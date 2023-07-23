@@ -7,13 +7,19 @@ This repository provides the code for our paper [Arithmetic-Based Pretraining --
 
 Please reference our work as follows:
 ```
-@misc{petrak2023arithmeticbased,
-      title={Arithmetic-Based Pretraining -- Improving Numeracy of Pretrained Language Models}, 
-      author={Dominic Petrak and Nafise Sadat Moosavi and Iryna Gurevych},
-      year={2023},
-      eprint={2205.06733},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{petrak-etal-2023-arithmetic,
+    title = "Arithmetic-Based Pretraining Improving Numeracy of Pretrained Language Models",
+    author = "Petrak, Dominic  and
+      Moosavi, Nafise Sadat  and
+      Gurevych, Iryna",
+    booktitle = "Proceedings of the The 12th Joint Conference on Lexical and Computational Semantics (*SEM 2023)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.starsem-1.42",
+    pages = "477--493",
+    abstract = "State-of-the-art pretrained language models tend to perform below their capabilities when applied out-of-the-box on tasks that require understanding and working with numbers (usually referred to as numeracy). Recent work suggests two main reasons for this: (1) popular tokenisation algorithms have limited expressiveness for numbers, and (2) common pretraining objectives do not target numeracy. Approaches that address these shortcomings usually require architectural changes or pretraining from scratch. In this paper, we propose a new extended pretraining approach called Arithmetic-Based Pretraining that jointly addresses both in one extended pretraining step without requiring architectural changes or pretraining from scratch. Arithmetic-Based Pretraining combines contrastive learning to improve the number representation, and a novel extended pretraining objective called Inferable Number Prediction Task to improve numeracy. Our experiments show the effectiveness of Arithmetic-Based Pretraining in three different tasks that require improved numeracy, i.e., reading comprehension in the DROP dataset, inference-on-tables in the InfoTabs dataset, and table-to-text generation in the WikiBio and SciGen datasets.",
 }
 ```
 
