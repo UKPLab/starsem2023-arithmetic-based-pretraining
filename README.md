@@ -8,7 +8,7 @@ This repository provides the code for our paper [Arithmetic-Based Pretraining --
 Please reference our work as follows:
 ```
 @inproceedings{petrak-etal-2023-arithmetic,
-    title = "Arithmetic-Based Pretraining Improving Numeracy of Pretrained Language Models",
+    title = "Arithmetic-Based Pretraining -- Improving Numeracy of Pretrained Language Models",
     author = "Petrak, Dominic  and
       Moosavi, Nafise Sadat  and
       Gurevych, Iryna",
